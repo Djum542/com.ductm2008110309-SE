@@ -2,8 +2,6 @@ package main.java.com.ductm2008110309;
 
 import java.util.Scanner;
 
-import com.ductm2008110309.Account;
-
 public class CreateccountUI {
     private Account account;
 

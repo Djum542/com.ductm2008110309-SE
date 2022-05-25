@@ -1,7 +1,5 @@
 package main.java.com.ductm2008110309;
 
-import com.ductm2008110309.Account;
-
 public class LoginAccount {
     private Account account;
 
