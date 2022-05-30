@@ -1,4 +1,4 @@
-package main.java.com.ductm2008110309;
+package src;
 
 public enum Action {
     CA, LI, LO;
