@@ -1,13 +1,14 @@
 package Tieuluancuoiky.Yeucauthem;
 
 public class BookroomEntity {
+    private static final boolean loggin = false;
     private String diachi;
     private String sophong;
     private String tienich;
-    private String gia;
-    private String dientich;
+    private float gia;
+    private float dientich;
 
-    public BookroomEntity(String diachi, String sophong, String tienich, String gia, String dientich) {
+    public BookroomEntity(String diachi, String sophong, String tienich, float gia, float dientich) {
         this.diachi = diachi;
         this.sophong = sophong;
         this.tienich = tienich;
@@ -35,11 +36,11 @@ public class BookroomEntity {
         return diachi;
     }
 
-    public String getDientich() {
+    public float getDientich() {
         return dientich;
     }
 
-    public String getGia() {
+    public float getGia() {
         return gia;
     }
 
@@ -49,6 +50,19 @@ public class BookroomEntity {
 
     public String getTienich() {
         return tienich;
+    }
+
+    public boolean checkloggedIn() {
+        return loggin;
+    }
+
+    public void setBookroom() {
+        this.diachi = diachi;
+        this.sophong = sophong;
+    }
+
+    public static StroredFile getBookroom(StroredFile BookroomEntity) {
+        return BookroomEntity;
     }
 
     @Override
