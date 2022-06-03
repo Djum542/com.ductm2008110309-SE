@@ -2,6 +2,7 @@ package Tieuluancuoiky.Yeucauthem;
 
 public class BookroomEntity {
     private static final boolean loggin = false;
+    private static final StroredFile BookroomEntity = null;
     private String diachi;
     private String sophong;
     private String tienich;
@@ -61,7 +62,7 @@ public class BookroomEntity {
         this.sophong = sophong;
     }
 
-    public static StroredFile getBookroom(StroredFile BookroomEntity) {
+    public static StroredFile getBookroom() {
         return BookroomEntity;
     }
 
