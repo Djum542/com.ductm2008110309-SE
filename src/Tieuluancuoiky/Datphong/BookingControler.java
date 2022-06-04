@@ -1,4 +1,4 @@
-package Tieuluancuoiky.Yeucauthem;
+package Tieuluancuoiky.Datphong;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +33,7 @@ public class BookingControler {
         return "BookingControler [bookroomEntity=" + bookroomEntity + "]";
     }
 
-    public List<Object> bookroomValid(String diachi, String sophong) {
+    public static List<Object> bookroomValid(String diachi, String sophong) {
         List<Object> list = new ArrayList<>();
         int index = -1;
         index = ((StroredFile) BookroomEntity.getBookroom()).search("AD", getDiachi);
