@@ -15,6 +15,9 @@ public class NoteUI {
         this.newNoteController = newNoteController;
     }
 
+    public NoteUI(NewNoteController newNoteController2) {
+    }
+
     public String handcommand(String rep) {
         String cmd = rep.toUpperCase();
         this.command = Action.valueOf(cmd);
@@ -44,6 +47,13 @@ public class NoteUI {
     @Override
     public String toString() {
         return "NoteUI [command=" + command + ", newNoteController=" + newNoteController + "]";
+    }
+
+    public String handleCommands(String rep) {
+        return null;
+    }
+
+    public void handleInputs() {
     }
 
 }

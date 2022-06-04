@@ -5,7 +5,7 @@ import com.google.gson.JsonArray;
 public class RoomHotel {
     private double gia;
     private double dientich;
-    private String diachi;
+    private static JsonArray diachi;
     private boolean tienich;
     private String sophong;
 

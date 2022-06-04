@@ -31,10 +31,11 @@ public class BookroomUI {
     public String handlInput() {
         if (this.command.equals(Action.BK)) {
             List<Object> list = BookroomInput();
-            this.booroomControler.bookroom(list.get(0), list.get(1));
+            // this.booroomControler.bookroom(list.get(0), list.get(1));
         } else {
             System.out.println("Mời quý khách chọn chức năng");
         }
+        return null;
 
     }
 

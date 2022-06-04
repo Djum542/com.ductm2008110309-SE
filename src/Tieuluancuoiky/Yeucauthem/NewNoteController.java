@@ -6,13 +6,13 @@ import java.util.List;
 import Tieuluancuoiky.Datphong.BookroomEntity;
 
 public class NewNoteController {
-    private BookroomEntity bookroomEntity;
+    private static BookroomEntity bookroomEntity;
 
     public NewNoteController(BookroomEntity bookroomEntity) {
         this.bookroomEntity = bookroomEntity;
     }
 
-    public BookroomEntity getBookroomEntity() {
+    public static BookroomEntity getBookroomEntity() {
         return bookroomEntity;
     }
 
@@ -42,5 +42,8 @@ public class NewNoteController {
     public String toString() {
         return "NewNoteController [bookroomEntity=" + bookroomEntity + "]";
     }
+
+	public static void note(String yeucauthem) {
+	}
 
 }

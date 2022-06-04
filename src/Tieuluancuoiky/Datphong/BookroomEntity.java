@@ -85,4 +85,8 @@ public class BookroomEntity {
                 + ", tienich=" + tienich + "]";
     }
 
+    public boolean bookroomValid() {
+        return false;
+    }
+
 }
