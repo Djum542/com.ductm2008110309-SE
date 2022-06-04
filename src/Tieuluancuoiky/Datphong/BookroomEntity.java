@@ -7,6 +7,7 @@ public class BookroomEntity {
     private String sophong;
     private String tienich;
     private float gia;
+    private String yeucauthem;
     private float dientich;
 
     public BookroomEntity(String diachi, String sophong, String tienich, float gia, float dientich) {
@@ -62,8 +63,20 @@ public class BookroomEntity {
         this.sophong = sophong;
     }
 
+    public static StroredFile getNote() {
+        return BookroomEntity;
+    }
+
     public static StroredFile getBookroom() {
         return BookroomEntity;
+    }
+
+    public String getYeucauthem() {
+        return yeucauthem;
+    }
+
+    public void setYeucauthem(String yeucauthem) {
+        this.yeucauthem = yeucauthem;
     }
 
     @Override
