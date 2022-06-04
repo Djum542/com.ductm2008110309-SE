@@ -37,10 +37,11 @@ public class NoteUI {
 
     private static BookroomEntity bookroomInput() {
         System.out.println("NOTE SERVICE");
-        for (int i = 0; i < 20; i++) {
-            String note = in.nextLine();
-            break;
-        }
+        // for (int i = 0; i < 20; i++) {
+        String yeucauthem = in.nextLine();
+        String sophong = in.nextLine();
+        // break;
+        // }
         return bookroomInput();
     }
 

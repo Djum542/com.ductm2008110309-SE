@@ -56,12 +56,12 @@ public class BootrapNote {
         if (!newNoteController.getBookroomEntity().bookroomValid()) {
 
             System.out.println("Enter one of the commands in the brackets:\n" +
-                    "[CA] Create Account\n" +
-                    "[LI] Login");
+                    "[BK] datphong\n" +
+                    "[SE] tim kiem");
         } else {
 
             System.out.println("Enter on of the commands in brackets:\n " +
-                    "[LO] Logout");
+                    "[YC] yeu cau");
         }
     }
 
