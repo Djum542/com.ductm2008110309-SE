@@ -57,11 +57,12 @@ public class BootrapNote {
 
             System.out.println("Enter one of the commands in the brackets:\n" +
                     "[BK] datphong\n" +
-                    "[SE] tim kiem");
+                    "[SE] tim kiem\n" +
+                    "[YC] yêu cầu thêm");
         } else {
 
             System.out.println("Enter on of the commands in brackets:\n " +
-                    "[YC] yeu cau");
+                    "[XN] xác nhan");
         }
     }
 

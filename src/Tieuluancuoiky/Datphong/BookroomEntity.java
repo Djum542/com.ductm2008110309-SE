@@ -89,4 +89,8 @@ public class BookroomEntity {
         return false;
     }
 
+    public static Object getRoom() {
+        return null;
+    }
+
 }

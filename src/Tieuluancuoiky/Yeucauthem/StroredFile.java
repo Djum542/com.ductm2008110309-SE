@@ -53,7 +53,7 @@ public class StroredFile {
 
     // Chuc nang doc du lieu
     public JsonArray read() {
-        JsonArray jsonArray = null;
+        JsonArray jsonArray = new JsonArray();
         try (FileReader reader = new FileReader(storedfile)) {
             jsonArray = (JsonArray) JsonParser.parseReader(reader);
         } catch (Exception e) {
@@ -94,4 +94,6 @@ public class StroredFile {
         return "StroredFile [memory=" + memory + ", storedfile=" + storedfile + "]";
     }
 
+    public void update(String sophong) {
+    }
 }

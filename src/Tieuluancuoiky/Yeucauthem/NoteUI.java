@@ -1,5 +1,7 @@
 package Tieuluancuoiky.Yeucauthem;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import Tieuluancuoiky.Datphong.BookingControler;
@@ -30,19 +32,23 @@ public class NoteUI {
 
     public void hanldInput() {
         if (this.command.equals(Action.YC)) {
-            BookroomEntity bookroomEntity = bookroomInput();
-            NewNoteController.note(bookroomEntity.getYeucauthem());
+            List<Object> list = noteInput();
+            NewNoteController.note(list.get(0).toString(), list.get(1));
         }
     }
 
-    private static BookroomEntity bookroomInput() {
+    private static List<Object> noteInput() {
+        List<Object> list = new ArrayList<>();
         System.out.println("NOTE SERVICE");
         // for (int i = 0; i < 20; i++) {
-        String yeucauthem = in.nextLine();
         String sophong = in.nextLine();
+        String yeucauthem = in.nextLine();
+
         // break;
         // }
-        return bookroomInput();
+        list.add(sophong);
+        list.add(yeucauthem);
+        return noteInput();
     }
 
     @Override
