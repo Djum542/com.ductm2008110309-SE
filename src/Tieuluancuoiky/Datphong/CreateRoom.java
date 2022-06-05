@@ -15,6 +15,12 @@ public class CreateRoom {
         RoomHotel roomHotel = new RoomHotel();
         roomHotel.addProperty(new RoomHotel(1000000, 80, "254 Dương an, 24, Tan Cu, Da Nang", "true", "5A16"));
         roomHotel.addProperty(new RoomHotel(7000000, 60, "132 Chu văn an, 22, Tan Cu, Da Nang ", "false", "12B2"));
+        roomHotel.addProperty(new RoomHotel(7000000, 60, "132 Chu văn an, 22, Tan Cu, Da Nang ", "false", "12B2"));
+        roomHotel.addProperty(new RoomHotel(7000000, 60, "132 Chu văn an, 22, Tan Cu, Da Nang ", "false", "12B2"));
+        roomHotel.addProperty(new RoomHotel(7000000, 60, "132 Chu văn an, 22, Tan Cu, Da Nang ", "false", "12B2"));
+        roomHotel.addProperty(new RoomHotel(7000000, 60, "132 Chu văn an, 22, Tan Cu, Da Nang ", "false", "12B2"));
+        roomHotel.addProperty(new RoomHotel(7000000, 60, "132 Chu văn an, 22, Tan Cu, Da Nang ", "false", "12B2"));
+
         List<RoomHotel> list = new ArrayList<>();
         list.add(roomHotel);
         Gson gson = new Gson();
