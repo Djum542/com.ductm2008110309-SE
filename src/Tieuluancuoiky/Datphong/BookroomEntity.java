@@ -1,8 +1,11 @@
 package Tieuluancuoiky.Datphong;
 
+import Tieuluancuoiky.Yeucauthem.StroredFile;
+
 public class BookroomEntity {
     private static final boolean loggin = false;
     private static final StroredFile BookroomEntity = null;
+    public static final String getNewRoom = null;
     private String diachi;
     private String sophong;
     private String tienich;
@@ -10,7 +13,7 @@ public class BookroomEntity {
     private String yeucauthem;
     private float dientich;
 
-    public BookroomEntity(String diachi, String sophong, String tienich, float gia, float dientich) {
+    public BookroomEntity(String diachi, String sophong, String tienich2, float gia, int i) {
         this.diachi = diachi;
         this.sophong = sophong;
         this.tienich = tienich;
@@ -89,7 +92,11 @@ public class BookroomEntity {
         return false;
     }
 
-    public static Object getRoom() {
+    public static StroredFile getNewRoom() {
+        return null;
+    }
+
+    public static Tieuluancuoiky.Yeucauthem.StroredFile getRoom() {
         return null;
     }
 

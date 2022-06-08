@@ -6,7 +6,6 @@ import Tieuluancuoiky.Datphong.BookroomEntity;
 
 public class BootrapNote {
     public static void main(String[] args) throws InterruptedException {
-        System.out.println("************* MENU *********");
         Scanner inpuScanner = new Scanner(System.in);
         BookroomEntity bookroomEntity = new BookroomEntity();
         NewNoteController newNoteController;

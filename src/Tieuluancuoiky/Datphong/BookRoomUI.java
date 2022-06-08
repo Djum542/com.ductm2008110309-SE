@@ -28,7 +28,7 @@ public class BookRoomUI {
     }
 
     public void hanldInput() {
-        if (this.command.equals(Action.YC)) {
+        if (this.command.equals(Tieuluancuoiky.Yeucauthem.Action.YC)) {
             BookroomEntity bookroomEntity = bookRoomInput();
             BookingControler.bookroom(bookroomEntity.getDiachi(), bookroomEntity.getSophong());
         }
