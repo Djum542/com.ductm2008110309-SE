@@ -24,8 +24,8 @@ public class NewNoteController {
         listcheck = roomValid(sophong);
         if (!(boolean) listcheck.get(0)) {
             System.out.println(listcheck.get(1));
-            ((StroredFile) BookroomEntity.getRoom()).update(sophong);
-            ((StroredFile) BookroomEntity.getRoom()).write();
+            ((StroredFile) BookroomEntity.getNewRoom()).update(sophong);
+            ((StroredFile) BookroomEntity.getNewRoom()).write();
         } else {
             System.out.println(listcheck.get(-1));
         }
@@ -37,7 +37,7 @@ public class NewNoteController {
         System.out.println("");
         List<Object> list = new ArrayList<>();
         int index = -1;
-        index = ((StroredFile) BookroomEntity.getRoom()).search("NU", sophong);
+        index = ((StroredFile) BookroomEntity.getNewRoom()).search("NU", sophong);
         if (index == -1) {
             list.add(false);
             list.add("[Don't have any room] dia diem nay da het phong");

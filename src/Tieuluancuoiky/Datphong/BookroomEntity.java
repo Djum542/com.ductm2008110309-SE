@@ -95,9 +95,4 @@ public class BookroomEntity {
     public static StroredFile getNewRoom() {
         return null;
     }
-
-    public static Tieuluancuoiky.Yeucauthem.StroredFile getRoom() {
-        return null;
-    }
-
 }

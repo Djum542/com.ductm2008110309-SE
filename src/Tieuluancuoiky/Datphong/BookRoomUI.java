@@ -2,12 +2,12 @@ package Tieuluancuoiky.Datphong;
 
 import java.util.Scanner;
 
-import Tieuluancuoiky.Action;
+import Tieuluancuoiky.Yeucauthem.Action;
 
 public class BookRoomUI {
     private static final String tienich = null;
     private static Scanner in = new Scanner(System.in);
-    private Action command;
+    private Tieuluancuoiky.Yeucauthem.Action command;
     private BookingControler bookingControler;
 
     public BookRoomUI(String command, BookingControler bookingControler) {
