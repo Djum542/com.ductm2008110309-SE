@@ -21,8 +21,7 @@ public class NewRoomController {
         } else
 
         {
-            BookroomEntity.getNewRoom.update(diachi, sophong, gia, tienich, dientich);
-            BookroomEntity.getNewRoom.write();
+            BookroomEntity.getNewRoom().update(diachi, sophong, dientich, gia);
             System.out.println(listcheck.get(1));
         }
     }
@@ -30,12 +29,12 @@ public class NewRoomController {
     public List<Object> roomValid(String diachi, String sophong) {
         List<Object> list = new ArrayList<>();
         int index = 0;
-        index = BookroomEntity.getNewRoom.search("AD", diachi);
+        index = BookroomEntity.getNewRoom().search("AD", diachi);
         if (index != -1) {
             list.add(false);
             list.add("[ADDRESS EXISTS] dia chi da ton tai");
         }
-        index = BookroomEntity.getNewRoom.search("NU", sophong);
+        index = BookroomEntity.getNewRoom().search("NU", sophong);
         if (index != -1) {
             list.add(false);
             list.add("[ROOM NUMBER EXISTS] so phong da ton tai");

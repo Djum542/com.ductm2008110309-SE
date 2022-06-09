@@ -36,7 +36,7 @@ public class BookingControler {
     public static List<Object> bookroomValid(String diachi, String sophong) {
         List<Object> list = new ArrayList<>();
         int index = -1;
-        index = BookroomEntity.getNewRoom.search("AD", diachi);
+        index = BookroomEntity.getNewRoom().search("AD", getDiachi);
         if (index == -1) {
             list.add(false);
             list.add("[Don't have any room] dia diem nay da het phong");

@@ -1,5 +1,7 @@
 package Tieuluancuoiky.Datphong;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import Tieuluancuoiky.Yeucauthem.Action;
@@ -39,6 +41,7 @@ public class BookRoomUI {
         String diachi = in.nextLine();
         System.out.println("ROOMNUMBER: ");
         String sophong = in.nextLine();
-        return new BookroomEntity(diachi, sophong, tienich, 0, 0);
+        return bookRoomInput();
     }
+
 }

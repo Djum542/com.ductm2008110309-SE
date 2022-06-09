@@ -13,7 +13,7 @@ public class BookroomEntity {
     private String yeucauthem;
     private float dientich;
 
-    public BookroomEntity(String diachi, String sophong, String tienich2, float gia, int i) {
+    public BookroomEntity(String diachi, String sophong, Boolean tienich2, float gia, String dientich2) {
         this.diachi = diachi;
         this.sophong = sophong;
         this.tienich = tienich;
@@ -93,6 +93,6 @@ public class BookroomEntity {
     }
 
     public static StroredFile getNewRoom() {
-        return null;
+        return BookroomEntity;
     }
 }

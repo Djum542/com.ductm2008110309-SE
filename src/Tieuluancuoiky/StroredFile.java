@@ -1,4 +1,4 @@
-package Tieuluancuoiky.Yeucauthem;
+package Tieuluancuoiky;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -75,7 +75,7 @@ public class StroredFile {
         return gson;
     }
 
-    public JsonObject update(String diachi, String sophong, float dientich, float gia) {
+    public JsonObject update() {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("AD", getDiachi);
         jsonObject.addProperty("NU", getsophong);
