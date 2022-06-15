@@ -29,12 +29,12 @@ public class NewRoomUI {
     public void hanldInput() {
         if (this.command.equals(Tieuluancuoiky.Yeucauthem.Action.NE())) {
             BookroomEntity bookroomEntity = newRoomInput();
-            this.newRoomController.newRoomInput(bookroomEntity.getDiachi(), bookroomEntity.getDientich(),
+            this.newRoomController.newRoom(bookroomEntity.getDiachi(), bookroomEntity.getDientich(),
                     bookroomEntity.getGia(), bookroomEntity.getSophong(), bookroomEntity.getTienich());
         }
     }
 
-    public BookroomEntity newRoomInput() {
+    private static BookroomEntity newRoomInput() {
         System.out.println("địa chỉ");
         String diachi = in.nextLine();
         System.out.println("số phòng");

@@ -97,4 +97,7 @@ public class StroredFile {
     public void update(String sophong) {
     }
 
+    public void update(String diachi, String sophong, float dientich, float gia, Object tienich) {
+    }
+
 }

@@ -12,7 +12,7 @@ public class NewRoomController {
         this.bookroomEntity = bookroomEntity;
     }
 
-    public void newRoomInput(String diachi, float dientich, float gia, String sophong, String tienich) {
+    public void createRoom(String diachi, float dientich, float gia, String sophong, boolean b, Object tienich) {
         List<Object> listcheck;
         listcheck = roomValid(diachi, sophong);
         if (!(boolean) listcheck.get(0)) {
@@ -21,7 +21,7 @@ public class NewRoomController {
         } else
 
         {
-            BookroomEntity.getNewRoom().update(diachi, sophong, dientich, gia);
+            BookroomEntity.getNewRoom().update(diachi, sophong, dientich, gia, tienich);
             System.out.println(listcheck.get(1));
         }
     }
@@ -33,27 +33,32 @@ public class NewRoomController {
         if (index != -1) {
             list.add(false);
             list.add("[ADDRESS EXISTS] dia chi da ton tai");
+            return list;
         }
         index = BookroomEntity.getNewRoom().search("NU", sophong);
         if (index != -1) {
             list.add(false);
             list.add("[ROOM NUMBER EXISTS] so phong da ton tai");
+            return list;
         }
         if (index == -1) {
             list.add(true);
             list.add("[New room] them phong thanh cong");
-
+            return list;
         }
         return list;
     }
 
-    public BookroomEntity getNewRoom() {
+    public BookroomEntity getBookroomEntity() {
         return bookroomEntity;
     }
 
     @Override
     public String toString() {
         return "NewRoomController [bookroomEntity=" + bookroomEntity + "]";
+    }
+
+    public void newRoom(String diachi, float dientich, float gia, String sophong, boolean tienich) {
     }
 
 }

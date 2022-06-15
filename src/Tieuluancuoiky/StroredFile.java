@@ -25,7 +25,7 @@ public class StroredFile {
         this.memory = memory;
     }
 
-    // Chuc nang timf kiem
+    // Chuc nang tim kiem
     public int search(String key, String value) {
         int index = -1;
         String diachi = null;
@@ -41,8 +41,8 @@ public class StroredFile {
         }
         // Vong lap de tim so phong
         for (int j = 0; j < memory.size(); j++) {
-            JsonObject jsonObject1 = memory.get(j).getAsJsonObject();
-            sophong = jsonObject1.get(key).getAsString();
+            JsonObject jsonObject = memory.get(j).getAsJsonObject();
+            sophong = jsonObject.get(key).getAsString();
             if (value.equals(sophong)) {
                 index = j;
                 break;
@@ -53,7 +53,7 @@ public class StroredFile {
 
     // Chuc nang doc du lieu
     public JsonArray read() {
-        JsonArray jsonArray = new JsonArray();
+        JsonArray jsonArray = null;
         try (FileReader reader = new FileReader(storedfile)) {
             jsonArray = (JsonArray) JsonParser.parseReader(reader);
         } catch (Exception e) {
@@ -75,13 +75,14 @@ public class StroredFile {
         return gson;
     }
 
-    public JsonObject update() {
+    public JsonObject update(String Diachi, String sophong, Boolean tienich, float gia, float Dientich) {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("AD", getDiachi);
-        jsonObject.addProperty("NU", getsophong);
-        jsonObject.addProperty("UN", gettienich);
-        jsonObject.addProperty("CO", getgia);
-        jsonObject.addProperty("S", getDientich);
+        jsonObject.addProperty("AD", Diachi);
+        jsonObject.addProperty("NU", sophong);
+        jsonObject.addProperty("UN", tienich);
+        jsonObject.addProperty("CO", gia);
+        jsonObject.addProperty("S", Dientich);
+        memory.add(jsonObject);
         return jsonObject;
     }
 
