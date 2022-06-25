@@ -55,12 +55,4 @@ public class NoteUI {
     public String toString() {
         return "NoteUI [command=" + command + ", newNoteController=" + newNoteController + "]";
     }
-
-    public String handleCommands(String rep) {
-        return null;
-    }
-
-    public void handleInputs() {
-    }
-
 }

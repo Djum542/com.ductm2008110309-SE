@@ -24,16 +24,12 @@ public class BootrapNote {
 
             String resCmd;
             if (rep.toUpperCase().equals(Action.YC.toString())) {
-                resCmd = noteUI.handleCommands(rep);// ?????
+                resCmd = noteUI.handcommand(rep);// ?????
                 System.out.println(resCmd);
                 // if(resCmd != null && !resCmd.equals("Unkown command.")){
-                noteUI.handleInputs();
+                noteUI.hanldInput();
                 // }
 
-            } else if (rep.toUpperCase().equals(Action.YC.toString())) {
-                resCmd = noteUI.handleCommands(rep);
-                System.out.println(resCmd);
-                noteUI.handleInputs();
             }
 
             // LI
