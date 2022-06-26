@@ -26,7 +26,7 @@ public class BookingControler extends MouseEvent {
     }
 
     public void bookroom(String diachi) {
-        JsonArray tempMemory = RoomHotel.getDiachi();
+        String tempMemory = RoomHotel.getDiachi();
         int index = -1;
         // 1. Đặt phòng
         if (diachi.equals(this.getdiachi())) {
@@ -34,7 +34,7 @@ public class BookingControler extends MouseEvent {
 
         } else if (this.roomHotel.getDiachi() != null && this.roomHotel.getDiachi().equals(diachi)) {
             System.out.println("Bạn đã đặt phòng ở đây rồi, bạn có muốn đặt thêm không?");
-            JsonObject jsonObject = tempMemory.get(index).getAsJsonObject();
+            
 
         }
     }

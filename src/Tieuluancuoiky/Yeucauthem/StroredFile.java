@@ -14,6 +14,7 @@ public class StroredFile {
     private static final String getsophong = null;
     private static final String getgia = null;
     private static final String getDientich = null;
+    private static final String yeucauthem = null;
     // khai bao bien
     private String storedfile;
     private JsonArray memory;
@@ -77,11 +78,12 @@ public class StroredFile {
 
     public JsonObject update(String diachi, String sophong, float dientich, float gia) {
         JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("AD", getDiachi);
-        jsonObject.addProperty("NU", getsophong);
-        jsonObject.addProperty("UN", gettienich);
-        jsonObject.addProperty("CO", getgia);
-        jsonObject.addProperty("S", getDientich);
+        jsonObject.addProperty("AD", diachi);
+        jsonObject.addProperty("NU", sophong);
+        jsonObject.addProperty("UN", false);
+        jsonObject.addProperty("CO", gia);
+        jsonObject.addProperty("S", dientich);
+        jsonObject.addProperty("YC", yeucauthem);
         return jsonObject;
     }
 

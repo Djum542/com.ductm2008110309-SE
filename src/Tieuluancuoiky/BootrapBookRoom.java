@@ -14,6 +14,7 @@ public class BootrapBookRoom {
         Scanner inpuScanner = new Scanner(System.in);
         BookroomEntity bookroomEntity = new BookroomEntity();
         NewNoteController newNoteController;
+        
         newNoteController = new NewNoteController(bookroomEntity);
         // tao ra ghi chu lai yeu cau them cua khach hang
         NoteUI noteUI = new NoteUI(newNoteController);

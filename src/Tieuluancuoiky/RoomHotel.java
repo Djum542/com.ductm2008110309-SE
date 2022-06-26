@@ -5,9 +5,10 @@ import com.google.gson.JsonArray;
 public class RoomHotel {
     private double gia;
     private double dientich;
-    private static JsonArray diachi;
+    private static String diachi;
     private boolean tienich;
     private String sophong;
+    private String yeucauthem;
 
     public RoomHotel() {
         this.gia = gia;
@@ -15,12 +16,27 @@ public class RoomHotel {
         this.diachi = diachi;
         this.tienich = tienich;
         this.sophong = sophong;
+        this.yeucauthem = yeucauthem;
     }
 
-    public RoomHotel(int i, int j, String string, String string2, String string3) {
+    public RoomHotel(double gia, double dientich, String diachi, String string, String sophong) {
+        this.gia = gia;
+        this.dientich = dientich;
+        this.diachi = diachi;
+        this.tienich = false;
+        this.sophong = sophong;
+        this.yeucauthem = yeucauthem;
     }
 
-    public static JsonArray getDiachi() {
+    public void setYeucauthem(String yeucauthem) {
+        this.yeucauthem = yeucauthem;
+    }
+
+    public String getYeucauthem() {
+        return yeucauthem;
+    }
+
+    public static String getDiachi() {
         return diachi;
     }
 
