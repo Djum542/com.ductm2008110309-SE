@@ -22,6 +22,7 @@ public class NewRoomController {
 
         {
             BookroomEntity.getNewRoom().update(diachi, sophong, dientich, gia, tienich);
+            BookroomEntity.getNewRoom().write();
             System.out.println(listcheck.get(1));
         }
     }
