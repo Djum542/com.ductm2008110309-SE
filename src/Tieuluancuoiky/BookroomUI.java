@@ -32,7 +32,8 @@ public class BookroomUI {
     // Nơi khách hàng nhập dữ liệu từ bàn phím vào
     public String handlInput() {
         if (this.command.equals(Action.BK)) {
-            List<Object> list = NoteInput();
+            String nhap = NoteInput();
+            System.out.println("nhap vào dia chi" + NoteInput());
             // this.booroomControler.bookroom(list.get(0), list.get(1));
         } else {
             System.out.println("Mời quý khách chọn chức năng");
@@ -41,11 +42,11 @@ public class BookroomUI {
 
     }
 
-    private List<Object> NoteInput() {
-        List<Object> list = new ArrayList<>();
+    public String NoteInput() {
+        // List<Object> list = new ArrayList<>();
         System.out.println("Nơi bạn muốn đến?/n Where are you go?");
         String diachi = in.nextLine();
-        list.add(diachi);
-        return list;
+        // list.add(diachi);
+        return diachi;
     }
 }

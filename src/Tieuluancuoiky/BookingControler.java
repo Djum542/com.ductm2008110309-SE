@@ -8,17 +8,7 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.input.PickResult;
 
-public class BookingControler extends MouseEvent {
-    public BookingControler(EventType<? extends MouseEvent> eventType, double x, double y, double screenX,
-            double screenY, MouseButton button, int clickCount, boolean shiftDown, boolean controlDown, boolean altDown,
-            boolean metaDown, boolean primaryButtonDown, boolean middleButtonDown, boolean secondaryButtonDown,
-            boolean synthesized, boolean popupTrigger, boolean stillSincePress, PickResult pickResult) {
-        super(eventType, x, y, screenX, screenY, button, clickCount, shiftDown, controlDown, altDown, metaDown,
-                primaryButtonDown, middleButtonDown, secondaryButtonDown, synthesized, popupTrigger, stillSincePress,
-                pickResult);
-        // TODO Auto-generated constructor stub
-    }
-
+public class BookingControler {
     private RoomHotel roomHotel;
 
     public RoomHotel getdiachi() {
@@ -34,7 +24,6 @@ public class BookingControler extends MouseEvent {
 
         } else if (this.roomHotel.getDiachi() != null && this.roomHotel.getDiachi().equals(diachi)) {
             System.out.println("Bạn đã đặt phòng ở đây rồi, bạn có muốn đặt thêm không?");
-            
 
         }
     }
